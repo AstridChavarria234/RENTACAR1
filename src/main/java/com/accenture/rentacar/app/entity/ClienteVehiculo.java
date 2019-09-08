@@ -24,14 +24,14 @@ public class ClienteVehiculo {
 	@GeneratedValue (strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@ManyToOne (fetch= FetchType.LAZY)//carga perezosa cuando llame a la tabla , no me traiga a todos los dientes y todas sus facturas, solo traea las cosas a medida que ls voy solicitando
+	@ManyToOne (fetch= FetchType.LAZY)//carga perezosa cuando llame a la tabla , no me traiga a todos los clientes y todas sus facturas, solo traea las cosas a medida que ls voy solicitando
 	private Cliente cliente;//relacion de uno a muchos un cliente puede tener muchos vehiculo
 	
 	@OneToMany(fetch = FetchType.LAZY)
 	private List<Vehiculo>vehiculos;
 	
 	@Temporal(TemporalType.DATE)
-	@Column(name="fecha_creaion_registro")
+	@Column(name="fecha_creacion_registro")
 	private Date fechaCreacionRegistro;
 	
 	private String observaciones;

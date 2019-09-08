@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Astrid y Natalia\Documents\TECHNO\RENTACAR1\src\main\java\com\accenture\rentacar"/>
 			<item value="D:\Jessica\Escritorio\Spring-Boot\workspace rentacar"/>
 		</list>
 		<list key="projectNameTemplate">
