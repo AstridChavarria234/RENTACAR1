@@ -1,5 +1,6 @@
 package com.accenture.rentacar.app.service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -42,6 +43,19 @@ public class VehiculoServiceImpl implements IVehiculoService {
 	public List<Vehiculo> listarTodos() {
 		// TODO Auto-generated method stub
 		return (List<Vehiculo>) vehiculoDao.findAll();
+	}
+	
+	@Override
+	
+	public List<Vehiculo> guardarvarios (Vehiculo [] vehiculos){
+		
+		List <Vehiculo> retorno= new ArrayList<Vehiculo>(); 
+	
+		for(Vehiculo vehiculo:vehiculos){
+			
+  retorno.add(vehiculoDao.save(vehiculo));}
+		return retorno; 
+	
 	}
 
 }
